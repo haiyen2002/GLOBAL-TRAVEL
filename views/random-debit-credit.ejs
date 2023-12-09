@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Ví dụ</title>
+    <style>
+        /* CSS nhúng trực tiếp vào trong tệp EJS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h3 {
+            color: red;
+        }
+
+        /* Bổ sung CSS khác tại đây */
+    </style>
+</head>
+<body>
+    <h3>
+        Random cột Nợ-Có
+    </h3>
+    
+    <form action="/random-debit-credit/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile"><br>
+        <input type="text" name="start" placeholder="Nhập dòng bắt đầu..."><br>
+        <input type="text" name="end" placeholder="Nhập dòng kết thúc..."><br>
+        <input type="text" name="debit" placeholder="Nhập tên cột Nợ...">
+        <input type="text" name="amountDebit" placeholder="Nhập số lượng dòng Nợ..."><br>
+        <input type="text" name="credit" placeholder="Nhập tên cột Có..."><br>
+        <button type="submit">Gửi</button>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
